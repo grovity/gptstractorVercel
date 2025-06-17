@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';Add commentMore actions
+import fetch from 'node-fetch';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
@@ -11,10 +11,9 @@ export default async function handler(req, res) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ pregunta, respuesta })
       });
-Add commentMore actions
+
       const data = await response.json();
       return res.status(200).json(data);
-
     } catch (error) {
       console.error(error);
       return res.status(500).json({ status: 'error', error: error.toString() });
