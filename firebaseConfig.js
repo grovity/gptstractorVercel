@@ -21,11 +21,12 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Función para guardar un experimento en Firestore
-export async function guardarExperimento(empresa, datosExperimento) {
+export async function guardarExperimento(empresa, pregunta, respuesta) {
   try {
     const docRef = await addDoc(collection(db, "experimentos"), {
       empresa: empresa,  // Guarda el nombre de la empresa
-      datos: datosExperimento,  // Guarda los datos del experimento
+      pregunta: pregunta,  // Guarda la pregunta
+      respuesta: respuesta,  // Guarda la respuesta
       fecha_creacion: new Date()  // Registra la fecha de creación del experimento
     });
     console.log("Documento guardado con ID: ", docRef.id);
