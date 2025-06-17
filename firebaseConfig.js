@@ -8,12 +8,12 @@ dotenv.config();
 
 // Configuración de Firebase con las credenciales de las variables de entorno
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.FIREBASE_APP_ID
+  apiKey: "AIzaSyBcJLm9WcRKdUPAkXx11YeyK2KnfnqCPgI",
+  authDomain: "microexperimentsdb.firebaseapp.com",
+  projectId: "microexperimentsdb",
+  storageBucket: "microexperimentsdb.firebasestorage.app",
+  messagingSenderId: "550223739499",
+  appId: "1:550223739499:web:6d8f53433e669f0afe8f2e"
 };
 
 // Inicializa Firebase
